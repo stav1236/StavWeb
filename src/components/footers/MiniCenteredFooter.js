@@ -27,7 +27,7 @@ const SocialLink = styled.a`
   }
 `;
 
-export default () => {
+export default (props) => {
   return (
     <Container>
       <Content>
@@ -40,8 +40,16 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="#">בית</Link>
-            <Link href="/components/blocks/Blog/ThreeColSimpleWithImage">קצת עלינו</Link>
-            <Link href="/components/blocks/Form/TwoColContactUsFull">ליצירת קשר</Link>
+            <Link>
+              <button onClick={props.linksFuncs[0]}>
+                קצת עלינו
+              </button>
+            </Link>
+            <Link>
+              <button onClick={props.linksFuncs[1]}>
+                ליצירת קשר
+              </button>
+            </Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/profile.php?id=100014603326375">
