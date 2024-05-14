@@ -1,6 +1,5 @@
 # StavWeb
 
-## Description:
 StavWeb is a landing page for a portfolio website. The site utilizes the T-react template for development.
 
 ## Usage
